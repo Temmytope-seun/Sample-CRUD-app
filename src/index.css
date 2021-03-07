@@ -11,3 +11,104 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.button, a.button, button, [type=submit], [type=reset], [type=button]{
+  display: inline-block;
+  border: 1px solid #0366ee;
+  border-radius: 4px;
+  background: #0366ee;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: none;
+  padding: 0.75rem 1.25rem;
+  margin: 0 0 0.5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+button, 
+.button {
+  margin-bottom: 0 !important;
+	margin-right: .5rem;
+}
+.muted-button, a.muted-button {
+  background: transparent;
+  border: 1px solid #cdcdcd;
+  color: #4e4e4e;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.container {
+  max-width: 1200px;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-small, .flex-large {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h1,h2,h3,h4,h5 {
+  margin: 1.5rem 0;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #404040;
+}
+label {
+  font-weight: 600;
+  max-width: 100%;
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+input {
+  display: block;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    padding: 0.75rem;
+    outline: none;
+    background: transparent;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+
+}
+thead th {
+  border-bottom: 2px solid #dedede;
+}
+th, td {
+  text-align: left;
+  padding: 0.5rem;
+}
+td {
+  border-bottom: 1px solid #dedede;
+}
+@media (min-width: 1000px){
+  .flex-large{
+    flex: 1;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
